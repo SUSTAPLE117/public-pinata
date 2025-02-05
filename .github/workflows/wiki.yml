@@ -1,0 +1,8 @@
+on:
+  gollum:
+
+jobs:
+  wiki:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo ${{ toJSON(github.event) }}
