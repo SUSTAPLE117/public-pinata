@@ -5,4 +5,6 @@ jobs:
   wiki:
     runs-on: ubuntu-latest
     steps:
-    - run: echo ${{ github.event }}
+     - name: Dump raw GitHub event
+       run: |
+         cat $GITHUB_EVENT_PATH
